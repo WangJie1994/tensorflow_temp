@@ -80,3 +80,5 @@ with tf.Session() as sess:
         sess.run(train_step, feed_dict={xs: batch_xs, ys: batch_ys, keep_prob: 0.5})
         if i%50 == 0:
             print(compute_accuracy(mnist.test.images, mnist.test.labels))
+
+# faster on gpu
